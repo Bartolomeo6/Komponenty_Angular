@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'synek',
@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class SynComponent {
   @Input() xImport!: string[];    // przechowuje dane zmiennej xEksport
+  @Output() answer = new EventEmitter<string>;
+  sendMessage() {
+    this.answer.emit('Będę czekał')
+  }
+
+  
 }

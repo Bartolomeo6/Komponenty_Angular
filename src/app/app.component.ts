@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projekt_kompo';
   xEksport: string[] = ['17:00','szkołą']
+  sonAnswer(granted: string) {
+    alert(granted);
+  }
 }
