@@ -1,6 +1,6 @@
 p{
     margin: 0 auto;
-    animation-name: animacjaBruh;
+    animation-name: animacjaBruh, whyYouMovin;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -8,6 +8,7 @@ p{
     font-size: 20%;
     position: relative;
     top: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @keyframes animacjaBruh{
@@ -16,4 +17,14 @@ p{
     50% { font-size: 100px; color: crimson; text-shadow: 3px 4px 4px red; transform: rotate(180deg) ;}
     75% { font-size: 75px; color: blueviolet; text-shadow: 3px 4px 4px fuchsia; transform: rotate(270deg);}
     100% { font-size: 50px; color: cyan; text-shadow: 3px 4px 4px lightblue; transform: rotate(360deg);}
+}
+
+@keyframes whyYouMovin{
+    0% {transform: translate(50px, 50px);}
+    20% {transform: translate(100px, 100px);}
+    40% {transform: translate(-50px, -50px);}
+    60% {transform: translate(-100px, -200px);}
+    80% {transform: translate(250px, 50px);}
+    100% {transform: translate(0px, 0px);}
+
 }
