@@ -1,0 +1,15 @@
+p{
+    margin: 0 auto;
+    animation-name: animacjaBruh;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animacjaBruh{
+    0% { font-size: 50px; color: cyan; text-shadow: 3px 4px 4px lightblue; transform: rotate(0deg);}
+    25% { font-size: 75px; color: aquamarine; text-shadow: 3px 4px 4px lime; transform: rotate(75deg);}
+    50% { font-size: 100px; color: crimson; text-shadow: 3px 4px 4px red; transform: rotate(150deg) ;}
+    75% { font-size: 75px; color: blueviolet; text-shadow: 3px 4px 4px fuchsia; transform: rotate(215deg);}
+    100% { font-size: 50px; color: cyan; text-shadow: 3px 4px 4px lightblue; transform: rotate(360deg);}
+}
